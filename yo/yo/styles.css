@@ -1,0 +1,106 @@
+/* Estilos para el fondo de la página */
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background: url('img/cod2.jpeg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background-size: cover; /* Asegura que la imagen cubra toda el área de fondo */
+    font-family: Arial, sans-serif; /* Define la fuente de texto */
+}
+
+/* Estilo para el título principal centrado sobre la imagen de fondo */
+.main-title {
+    position: absolute; /* Posiciona el título de manera absoluta */
+    top: 10%; /* Ajusta la posición vertical del título para estar más cerca de la parte superior */
+    left: 50%; /* Centra el título horizontalmente */
+    transform: translateX(-50%); /* Ajusta el título al centro exacto */
+    text-shadow: 3px 3px 6px rgba(41, 40, 40, 0.8); /* Sombra gris con opacidad para mejorar la legibilidad */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    width: 100%; /* Hace que el contenedor del título ocupe todo el ancho */
+    color: white; /* Color del texto */
+}
+
+.main-title h1 {
+    font-size: 36px; /* Tamaño de fuente para el título */
+    font-weight: bold; /* Negrilla para el título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para mejorar la visibilidad del texto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Estilo para el contenedor con título y texto a la izquierda */
+.left-info-container {
+    position: absolute; /* Posiciona el contenedor de manera absoluta */
+    top: 50%; /* Coloca el contenedor verticalmente en el centro de la página */
+    left: 0; /* Alinea el contenedor a la izquierda */
+    transform: translateY(-50%); /* Ajusta el contenedor al centro verticalmente */
+    display: flex; /* Usa flexbox para alinear elementos internos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 40%; /* Define el ancho del contenedor */
+}
+
+.left-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px; /* Relleno interno del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil alrededor del contenedor */
+    width: 100%; /* Ocupa el ancho del contenedor principal */
+    max-width: 400px; /* Ancho máximo del contenedor */
+}
+
+/* Estilo para el título y texto dentro del contenedor izquierdo */
+.left-info h1 {
+    font-size: 20px; /* Tamaño de fuente para el título */
+    color: rgb(224, 5, 5); /* Color del título */
+    margin: 0; /* Elimina el margen por defecto */
+    font-weight: bold; /* Negrilla para el título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto para mejorar la visibilidad */
+}
+
+.left-info p {
+    font-size: 16px; /* Tamaño de fuente para el párrafo */
+    color: black; /* Color del texto */
+    margin-top: 10px; /* Espacio superior del párrafo */
+}
+
+/* Estilos para el contenedor del formulario con imagen de fondo y opacidad */
+.form-container {
+    background: url('img/cod3.jpeg') no-repeat center center; /* Imagen de fondo para el cuadro del formulario */
+    background-size: cover; /* Asegura que la imagen cubra toda el área del contenedor */
+    border: 1px solid #000; /* Borde negro alrededor del contenedor */
+    padding: 20px; /* Relleno interno del contenedor */
+    width: 400px; /* Ampliado horizontalmente */
+    position: absolute; /* Posiciona el contenedor de manera absoluta */
+    top: 50%; /* Coloca el contenedor verticalmente en el centro de la página */
+    right: 5%; /* Posiciona el contenedor hacia la derecha */
+    transform: translateY(-50%); /* Ajusta el contenedor al centro verticalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    opacity: 0.7; /* Ajusta la opacidad del contenedor (0.5 = 50%) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+}
+
+/* Estilo del título dentro del contenedor del formulario */
+.form-container h2 {
+    margin: 0 0 20px 0; /* Espacio debajo del título */
+    font-size: 24px; /* Tamaño de fuente para el título */
+    color: rgb(248, 244, 244); /* Color del título en el contenedor */
+}
+
+/* Estilos para las etiquetas y el botón */
+.form-container label {
+    color: rgb(241, 240, 240); /* Color de las letras */
+    font-weight: bold; /* Negrilla para las etiquetas */
+}
+
+.form-container button {
+    background-color: red; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente para el botón */
+    margin-top: 10px; /* Espacio superior del botón */
+}
+
+.form-container button:hover {
+    background-color: darkred; /* Cambia el color de fondo del botón al pasar el cursor */
+}

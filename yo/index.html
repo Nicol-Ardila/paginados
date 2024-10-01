@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres para el documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que el diseño sea responsivo en dispositivos móviles -->
+    <title>Formulario con Visualización de Datos</title> <!-- Título de la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS externo para aplicar estilos -->
+</head>
+<body>
+
+    <!-- Título centrado sobre la imagen de fondo -->
+    <div class="main-title"> <!-- Contenedor para el título principal -->
+        <h1>¡Participa en el Torneo de Call of Duty!</h1> <!-- Título principal de la página -->
+    </div>
+
+    <!-- Contenedor con título y texto a la izquierda -->
+    <div class="left-info-container"> <!-- Contenedor principal para la información a la izquierda -->
+        <div class="left-info"> <!-- Contenedor para el título y el párrafo -->
+            <h1>No te pierdas la oportunidad para participar en el torneo de COD</h1> <!-- Título dentro del contenedor de información -->
+            <p>¡Participa en el torneo de Call of Duty y muestra tus habilidades! Este torneo reunirá a los mejores jugadores para competir en emocionantes partidas. No te pierdas la oportunidad de ser parte de esta experiencia única y ganar increíbles premios. ¡Regístrate ahora y asegura tu lugar en el evento más esperado del año!</p> <!-- Texto descriptivo sobre el torneo -->
+        </div>
+    </div>
+
+    <!-- Cuadro que contiene el formulario con el título -->
+    <div class="form-container"> <!-- Contenedor para el formulario -->
+        <h2>Inscripción</h2> <!-- Título del formulario -->
+        <form method="post" action="mi.php"> <!-- Formulario que envía datos al archivo mi.php -->
+            <label for="txt_name">Nombre:</label><br> <!-- Etiqueta para el campo de nombre -->
+            <input type="text" id="txt_name" name="txt_name" required><br><br> <!-- Campo de entrada para el nombre -->
+
+            <label for="document">Documento:</label><br> <!-- Etiqueta para el campo de documento -->
+            <input type="number" id="document" name="document" required><br><br> <!-- Campo de entrada para el documento -->
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br> <!-- Etiqueta para el campo de fecha de nacimiento -->
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br> <!-- Campo de entrada para la fecha de nacimiento -->
+
+            <label for="correo">Correo:</label><br> <!-- Etiqueta para el campo de correo -->
+            <input type="email" id="correo" name="correo" placeholder="Escriba su correo" required><br><br> <!-- Campo de entrada para el correo -->
+
+            <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+        </form>
+    </div>
+    
+</body>
+</html>
